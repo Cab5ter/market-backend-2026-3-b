@@ -1,6 +1,8 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities;
 
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table (name = "Clientes")
@@ -63,6 +65,9 @@ public class Cliente {
     public String getCorreoElectronico() {
         return correoElectronico;
     }
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compras;
 
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;

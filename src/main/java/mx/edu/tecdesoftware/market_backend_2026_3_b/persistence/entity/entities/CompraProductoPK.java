@@ -1,8 +1,7 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.Embedded;
 
 @Embeddable
 public class CompraProductoPK {

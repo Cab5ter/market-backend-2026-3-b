@@ -1,4 +1,4 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities;
 
 import jakarta.persistence.*;
 
@@ -28,6 +28,15 @@ public class Producto {
     private Integer cantidadStock;
 
     private Boolean estado;
+
+    //Relacion con categoria
+    //Muchos productos pueden pertenecer a una categoria
+    @ManyToOne
+    @JoinColumn(name = "id_categoria",
+    //No quiero que se edite nada
+    insertable = false, updatable = false)
+
+    private Categoria catergoria;
 
 
 }
