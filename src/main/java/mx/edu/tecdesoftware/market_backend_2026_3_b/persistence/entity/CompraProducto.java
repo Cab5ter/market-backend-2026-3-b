@@ -1,4 +1,4 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity;
 
 
 import jakarta.persistence.*;
@@ -14,7 +14,8 @@ import jakarta.persistence.*;
 
     //Unir la tabla de compras
     @ManyToOne
-    @JoinColumn(name = "id_compra", insertable = false, updatable = false)
+    @MapsId("idCompra")
+    @JoinColumn(name = "id_compra")
     private Compra compra;
 
     //Unir la tabla de productos

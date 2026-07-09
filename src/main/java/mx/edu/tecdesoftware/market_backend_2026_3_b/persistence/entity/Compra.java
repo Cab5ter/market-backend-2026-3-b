@@ -1,4 +1,4 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity;
 
 
 import jakarta.persistence.*;
@@ -15,8 +15,8 @@ public class Compra {
     @Column (name = "id_compra")
     private Integer idCompra;
 
-    @Column (name = "id_cliente")
-    private String idCliente;
+    @Column(name = "id_cliente")
+    private Integer idCliente;
 
     private LocalDateTime fecha;
 
@@ -32,7 +32,7 @@ public class Compra {
     @JoinColumn (name = "id_cliente", insertable = false, updatable = false)
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "compra")
+    @OneToMany(mappedBy = "compra", cascade = CascadeType.ALL)
     private List<CompraProducto> productos;
 
     public Integer getIdCompra() {
@@ -43,14 +43,13 @@ public class Compra {
         this.idCompra = idCompra;
     }
 
-    public String getIdCliente() {
+    public Integer getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(Integer idCliente) {
         this.idCliente = idCliente;
     }
-
     public LocalDateTime getFecha() {
         return fecha;
     }

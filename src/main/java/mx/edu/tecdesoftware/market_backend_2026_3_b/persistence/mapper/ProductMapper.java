@@ -1,7 +1,7 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.mapper;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.mapper;
 
 import mx.edu.tecdesoftware.market_backend_2026_3_b.domain.Product;
-import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities.Producto;
+import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.Producto;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

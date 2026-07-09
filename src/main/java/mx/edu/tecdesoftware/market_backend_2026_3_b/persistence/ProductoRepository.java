@@ -1,10 +1,10 @@
-package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity;
+package mx.edu.tecdesoftware.market_backend_2026_3_b.persistence;
 
 import mx.edu.tecdesoftware.market_backend_2026_3_b.domain.Product;
 import mx.edu.tecdesoftware.market_backend_2026_3_b.domain.repository.ProductRepository;
-import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.crud.ProductoCrudRepository;
-import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.entities.Producto;
-import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.mapper.ProductMapper;
+import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.crud.ProductoCrudRepository;
+import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.entity.Producto;
+import mx.edu.tecdesoftware.market_backend_2026_3_b.persistence.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
