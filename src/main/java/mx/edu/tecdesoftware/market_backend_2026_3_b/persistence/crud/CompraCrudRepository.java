@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface CompraCrudRepository extends CrudRepository<Compra, Integer> {
 
-    List<Compra> findByIdCliente(Integer idCliente);
+    List<Compra> findByIdCliente(String idCliente);
 }

@@ -6,7 +6,6 @@ import mx.edu.tecdesoftware.market_backend_2026_3_b.domain.repository.ProductRep
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 

@@ -9,7 +9,15 @@ public interface PurchaseRepository {
 
     List<Purchase> getAll();
 
-    Optional<List<Purchase>> getByClient(Integer clientId);
+    Optional<List<Purchase>> getByClient(String clientId);
+
+    Optional<Purchase> getPurchase(Integer purchaseId);
+
+    boolean clientExists(String clientId);
+
+    boolean productExists(Integer productId);
 
     Purchase save(Purchase purchase);
+
+    void delete(Integer purchaseId);
 }
